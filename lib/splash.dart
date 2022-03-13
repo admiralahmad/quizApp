@@ -1,7 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:flutter_mentor_quiz_app_tut/home.dart';
+import 'package:flutter_mentor_quiz_app_tut/login.dart';
+import 'package:flutter_mentor_quiz_app_tut/quizpage.dart';
+
 
 class splashscreen extends StatefulWidget {
   @override
@@ -14,7 +17,7 @@ class _splashscreenState extends State<splashscreen> {
     super.initState();
     Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => Home(),
+        builder: (context) => loginPage(),
       ));
     });
   }
@@ -22,8 +25,19 @@ class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.indigo,
-        body: Center(
+        backgroundColor: Colors.transparent,
+        body: Container(
+          decoration: BoxDecoration(
+           gradient: LinearGradient(
+	                  colors: 
+                    [
+	                    Color.fromRGBO(143, 148, 251, 1),
+	                    Color.fromRGBO(143, 148, 251, .6),
+	                  ]            
+
+          )
+          ),
+          child: Center(
             child: Text(
           "PyQuiz",
           style: TextStyle(
@@ -31,6 +45,6 @@ class _splashscreenState extends State<splashscreen> {
             color: Colors.white,
             fontFamily: "Satisfy",
           ),
-        )));
+        ))));
   }
 }
