@@ -17,7 +17,7 @@ class _splashscreenState extends State<splashscreen> {
     super.initState();
     Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => loginPage(),
+        builder: (context) => quizpage(),
       ));
     });
   }
