@@ -1,4 +1,4 @@
-# flutter_mentor_quiz_app_tut
+# A Flutter Quiz App
 
 A Quiz App
 
