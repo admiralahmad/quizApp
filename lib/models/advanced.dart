@@ -8,10 +8,10 @@ return Advanced(
   question: json['question'],
   answers: json['answers'],
   hint: json['hint'],
-<<<<<<< Updated upstream
+
   );
-=======
-);
->>>>>>> Stashed changes
+
+
+
 }
 }

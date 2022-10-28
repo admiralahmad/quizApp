@@ -1,10 +1,9 @@
 import 'dart:convert';
-<<<<<<< Updated upstream
+
 import 'models/intermediate.dart';
-=======
-import 'package:PyQuiz/models/advanced.dart';
-import 'package:PyQuiz/models/intermediate.dart';
->>>>>>> Stashed changes
+
+
+
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'resultpage.dart';
