@@ -1,9 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_mentor_quiz_app_tut/home.dart';
-import 'package:flutter_mentor_quiz_app_tut/login.dart';
-import 'package:flutter_mentor_quiz_app_tut/quizpage.dart';
+import 'home.dart';
+import 'intermediatequiz.dart';
 
 
 class splashscreen extends StatefulWidget {
@@ -17,7 +16,7 @@ class _splashscreenState extends State<splashscreen> {
     super.initState();
     Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => quizpage(),
+        builder: (context) => homepage(),
       ));
     });
   }

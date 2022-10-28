@@ -1,131 +1,253 @@
 [
-    {
-      "question": "AHow long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
-    },
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
+  {
+    "question": "Which of the following is a valid variable?",
+    "answers": [
+      {"answerText":" var@", "score": false},
+      {"answerText": "32var", "score": false},
+      {"answerText": "class", "score": false},
+      {"answerText": "abc_a_c","score": true}
+    ],
+    "hint":"none"
+  },
+  
+  {
+    "question": "Which of the following blocks allows you to handle the errors?",
+    "answers": [
+      {"answerText":" except block", "score": true},
+      {"answerText": "try block", "score": false},
+      {"answerText": "finally block", "score": false},
+      {"answerText": "None of the above","score": false}
+    ],
+    "hint":"The except block allows you to handle the errors."
+  },
+
+  
+  {
+    "question": "In the Python Programming Language, syntax error is detected by ______ at _________",
+    "answers": [
+      {"answerText":" Interpreter / Compile time", "score": false},
+      {"answerText": "Run time . Interpreter", "score": false},
+      {"answerText": "Interpreter / Run time", "score": true},
+      {"answerText": "Compile time / Run time","score": false}
+    ],
+    "hint":"In the Python Programming Language, the interpreter can detect a syntax error at run time. The syntax error is a spelling-like mistake in the source code."
+  },
+
+  
+  {
+    "question": "Which of these are keywords?",
+    "answers": [
+      {"answerText":" in", "score": false},
+      {"answerText": "is", "score": false},
+      {"answerText": "assert", "score": false},
+      {"answerText": "All of the above","score": true}
+    ],
+    "hint":"All 'in', 'is' and 'assert' are keywords"
+  },
+
+  
+  {
+    "question": "Which of the following is correctly evaluated for this function?",
+    "answers": [
+      {"answerText":"(x**y) / z", "score": false},
+      {"answerText": "(x / y) * z", "score": false},
+      {"answerText": "(x**y) % z", "score": true},
+      {"answerText": "(x / y) / z","score": false}
+    ],
+    "hint":"none"
+  },
+
+  
+  {
+    "question": "Python was developed by?",
+    "answers": [
+      {"answerText":" Guido van Rossum", "score": true},
+      {"answerText": "James Gosling", "score": false},
+      {"answerText": "Dennis Ritchie", "score": false},
+      {"answerText": "Bjarne Stroustrup","score": false}
+    ],
+    "hint":"none"
+  },
+
+  
+  {
+    "question": "Why are local variable names beginning with an underscore discouraged?",
+    "answers": [
+      {"answerText":"They confuse the interpreter", "score": false},
+      {"answerText": "They are used to indicate a private variable of a class", "score": true},
+      {"answerText": "They are used to indicate global variables", "score": false},
+      {"answerText": "They slow down execution","score": false}
+    ],
+    "hint":"Local variable names beginning with an underscore discouraged because they are used to indicate a private variables of a class."
+  },
+
+  
+  {
+    "question": "What will be the output of the following code? /n x = 12 /n for i in x: /n print(i)",
+    "answers": [
+      {"answerText":"12", "score": false},
+      {"answerText": "1 2", "score": false},
+      {"answerText": "Error", "score": true},
+      {"answerText": "None of the above","score": false}
+    ],
+    "hint":"Objects of type 'int' are not iterable."
+  },
+
+  
+  {
+    "question": "In which year was the Python 3.0 version developed?",
+    "answers": [
+      {"answerText":" 2008", "score": true},
+      {"answerText": "2000", "score": false},
+      {"answerText": "2010", "score": false},
+      {"answerText": "2005","score": false}
+    ],
+    "hint":"none"
+  },
+
+  
+  {
+    "question": " A variable that is defined inside a method and belongs only to the current instance of a class is known as??",
+    "answers": [
+      {"answerText":"Inheritable", "score": false},
+      {"answerText": "Instance variable", "score": true},
+      {"answerText": "Function overloading", "score": false},
+      {"answerText": "Instantiation","score": false}
+    ],
+    "hint":"none"
+  },
+  
+  {
+    "question": "Which of the following words cannot be a variable in the python language?",
+    "answers": [
+      {"answerText":"_val", "score": false},
+      {"answerText": "val", "score": false},
+      {"answerText": "try", "score": true},
+      {"answerText": "_try_","score": false}
+    ],
+    "hint":"'try; is a keyword"
+  },
+
+  {
+    "question": "Which of the following words cannot be a variable in the python language?",
+    "answers": [
+      {"answerText":"_val", "score": false},
+      {"answerText": "val", "score": false},
+      {"answerText": "try", "score": true},
+      {"answerText": "_try_","score": false}
+    ],
+    "hint":"'try' is a keyword"
+  },
+
+  {
+    "question": "What is a variable defined outside a function referred to as?",
+    "answers": [
+      {"answerText":"Local variable", "score": false},
+      {"answerText": "Global variable", "score": true},
+      {"answerText": "Static variable", "score": false},
+      {"answerText": "Automatic variable","score": false}
+    ],
+    "hint":"' Variable defined outside a function is referred as Global variable and can be accessible by other functions."
+  },
+
+  {
+    "question": " Suppose a user wants to print the second value of an array with 5 elements. What will be the syntax of the second value of the array?",
+    "answers": [
+      {"answerText":"array[2]", "score": false},
+      {"answerText": "array[1]", "score": true},
+      {"answerText": "array[-1]", "score": false},
+      {"answerText": "array[-2]","score": false}
+    ],
+    "hint":" The index of the array starts with 0."
+  },
+
+  {
+    "question": "Which of the following operators is the correct option for power(ab)?",
+    "answers": [
+      {"answerText":"a ^ b", "score": false},
+      {"answerText": "a**b", "score": true},
+      {"answerText": "a ^ ^ b", "score": false},
+      {"answerText": "a ^ * b","score": false}
+    ],
+    "hint":"'The power operator in python is a**b, i.e., 2**3=8."
+  },
+
+  {
+    "question": "Which of the following words cannot be a variable in the python language?",
+    "answers": [
+      {"answerText":"_val", "score": false},
+      {"answerText": "val", "score": false},
+      {"answerText": "try", "score": true},
+      {"answerText": "_try_","score": false}
+    ],
+    "hint":"'try; is a keyword"
+  },
+
+  {
+    "question": "Which of the following is the use of id() function in python?",
+    "answers": [
+      {"answerText":"Every object doesn't have a unique id", "score": false},
+      {"answerText": "Id returns the identity of the object", "score": true},
+      {"answerText": "All of the above mentioned", "score": false},
+      {"answerText": "None of the above mentioned","score": false}
+    ],
+    "hint":"none"
+  },
+
+  {
+    "question": "Python was developed in which year?",
+    "answers": [
+      {"answerText":" 1972", "score": false},
+      {"answerText": "1995", "score": false},
+      {"answerText": "1989", "score": true},
+      {"answerText": "1981","score": false}
+    ],
+    "hint":"none"
+  },
+
+  {
+    "question": "Which of this statement will give an error?",
+    "answers": [
+      {"answerText":" a++", "score": true},
+      {"answerText": "++a", "score": false},
+      {"answerText": "a+1", "score": false},
+      {"answerText": "Both A and B","score": false}
+    ],
+    "hint":"none"
+  },
+
+  {
+    "question": "Which of the following is true for the variable names in Python?",
+    "answers": [
+      {"answerText":" Unlimited length", "score": true},
+      {"answerText": "All private members must have leading and trailing underscores", "score": false},
+      {"answerText": "Underscore and ampersand are the only two special characters allowed", "score": false},
+      {"answerText": "None of the above mentioned","score": false}
+    ],
+    "hint":"Variable names can be of any length."
     },
 
-    
     {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
+      "question": "The output to execute string.ascii_letters can also be obtained from:?",
       "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
+        {"answerText":"character", "score": false},
+        {"answerText": "ascii_lowercase_string.digits", "score": false},
+        {"answerText": "lowercase_string.uppercase", "score": false},
+        {"answerText": "ascii_lowercase+string.ascii_uppercase","score": true}
       ],
-      "hint":" "
+      "hint":"none"
     },
 
-    
     {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
+      "question": "Which operator is used in Python to import modules from packages?",
       "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
+        {"answerText":" .", "score": true},
+        {"answerText": "*", "score": false},
+        {"answerText": "->", "score": false},
+        {"answerText": "&","score": false}
       ],
-      "hint":" "
-    },
-
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
-    },
-
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
-    },
-
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
-    },
-
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
-    },
-
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
-    },
-
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
-    },
-    
-    {
-      "question": "How long is New Zealand’s Ninety Mile Beach?",
-      "answers": [
-        {"answerText":" 88km, so 55 miles long.", "score": true},
-        {"answerText": "55km, so 34 miles long.", "score": false},
-        {"answerText": "90km, so 56 miles long.", "score": false},
-        {"answerText": "","score": false}
-      ],
-      "hint":" "
+      "hint":"Operator is used in Python to import modules from packages."
     }
-    
-  ]
+
+  
+]
