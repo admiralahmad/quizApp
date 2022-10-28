@@ -1,10 +1,10 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:PyQuiz/advancedquiz.dart';
-import 'package:PyQuiz/beginnerquiz.dart';
+import 'advancedquiz.dart';
+import 'beginnerquiz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:PyQuiz/intermediatequiz.dart';  
+import 'intermediatequiz.dart';  
 
    
 class homepage extends StatefulWidget {
