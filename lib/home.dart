@@ -1,7 +1,11 @@
+// ignore_for_file: deprecated_member_use
+
+import 'advancedquiz.dart';
+import 'beginnerquiz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_mentor_quiz_app_tut/quizpage.dart';   
-   
+import 'intermediatequiz.dart';  
+
    
 class homepage extends StatefulWidget {
   @override
@@ -36,9 +40,22 @@ class _homepageState extends State<homepage>{
       ),
       child: InkWell(
         onTap: () {
+          if(langname == "Beginner"){
           Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: ((context) => getjson(langname))
+            MaterialPageRoute(builder: ((context) => beginnerquizpage())
           ));
+          }
+          else if(langname == "Intermediate")
+          {
+            Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: ((context) => intermediatequizpage())
+          ));
+          }
+          if(langname == "Advanced"){
+            Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: ((context) => advancedquizpage())
+          ));
+          }
         },
         child: Material(
           color: Color.fromARGB(255, 63, 63, 65),
@@ -110,6 +127,7 @@ class _homepageState extends State<homepage>{
       ),
       body: ListView(
         children: <Widget>[
+          // ElevatedButton(onPressed: onPressed, child: child)
           customcard("Beginner", "lib/images/python.png", des[0]),
           customcard("Intermediate", "lib/images/python.png", des[1]),
           customcard("Advanced", "lib/images/python.png", des[2]),
